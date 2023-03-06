@@ -1,0 +1,10 @@
+<div *ngIf="!running">
+    <button (click)="start()">Start search</button>
+</div>
+
+<div *ngIf="running">
+    <div>{{ 'Current functions in queue: ' + runStack.length }}</div>
+    <div>{{ 'Total steps run: ' + totalRun }}</div>
+
+    <button (click)="terminate()">Kill it</button>
+</div>

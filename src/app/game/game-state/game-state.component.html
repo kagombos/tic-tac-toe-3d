@@ -1,0 +1,9 @@
+<div class="table-wrapper">
+    <table class="d-inline-block mx-2" *ngFor="let y of [0, 1, 2]">
+        <tr class="piece-row" *ngFor="let x of [0, 1, 2]">
+            <td class="piece p-2" *ngFor="let z of [0, 1, 2]">
+                <span>{{ game | gameState:x:y:z }}</span>
+            </td>
+        </tr>
+    </table>
+</div>

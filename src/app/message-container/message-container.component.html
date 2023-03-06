@@ -1,0 +1,7 @@
+<div>
+    <div *ngFor="let message of messages">
+        <span>{{ message }}</span>
+    </div>
+</div>
+
+<input [ngModel]="inputBox" (ngModelChange)="inputBoxChange($event)"/>
